@@ -1,6 +1,6 @@
 ---
 name: JIRA-Attachments-Rename
-version: 1.01
+version: 1.02
 author:
   - 'Martyloo <mlbright@gmail.com>'
 abstract: This module renames JIRA attachments to match changed project keys
@@ -12,7 +12,7 @@ build_requires:
 provides:
   JIRA::Attachments::Rename:
     file: lib/JIRA/Attachments/Rename.pm
-    version: 1.01
+    version: 1.02
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

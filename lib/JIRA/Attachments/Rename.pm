@@ -4,7 +4,7 @@ use warnings;
 use strict;
 use File::Find;
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 sub new {
 	my $class = shift;
@@ -53,8 +53,8 @@ This documentation refers to version 1.01
 
 =head1 SYNOPSIS
 
-c<< my $sample = JIRA::Attachments::Rename->new("/tmp", "BDV", "BPV");
-       $sample->att_rename(); >>
+	my $sample = JIRA::Attachments::Rename->new("/tmp", "BDV", "BPV");
+  $sample->att_rename();
 
 =head1 DESCRIPTION
 
@@ -63,14 +63,14 @@ have been changed.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 c<new()>
-
-Creates our object.
-
-=head2 c<att_rename( $dir, $old_key, $new_key )>
+=head2 new($dir, $old_key, $new_key )
 
 Takes a directory where JIRA attachments are located, an old project key and
 and a new project key.
+
+=head2 att_rename();
+
+Call this function to rename the directories matching the key indicated in the constructor.
 
 =head1 DEPENDENCIES
 
