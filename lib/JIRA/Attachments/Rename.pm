@@ -4,7 +4,7 @@ use warnings;
 use strict;
 use File::Find;
 
-our $VERSION = '1.02';
+our $VERSION = '1.03';
 
 sub new {
 	my $class = shift;
@@ -53,8 +53,8 @@ This documentation refers to version 1.01
 
 =head1 SYNOPSIS
 
-	my $sample = JIRA::Attachments::Rename->new("/tmp", "BDV", "BPV");
-  $sample->att_rename();
+my $sample = JIRA::Attachments::Rename->new("/tmp", "TST", "TEST");
+$sample->att_rename();
 
 =head1 DESCRIPTION
 
